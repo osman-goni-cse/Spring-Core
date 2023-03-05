@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="student" class="Student">
+        <property name="studentId">
+            <value>2255</value>
+        </property>
+        <property name="studentName">
+            <value>Osman Goni</value>
+        </property>
+        <property name="studentAddress">
+            <value>Chattogram</value>
+        </property>
+        <property name="skills">
+            <list>
+                <value>Java</value>
+                <value>Python</value>
+                <value>Javascript</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="address" class="Address">
+        <constructor-arg index="0" value="Chittagong">
+
+        </constructor-arg>
+        <constructor-arg index="1" value="Ctg Zilla"></constructor-arg>
+        <constructor-arg index="2" value="Bangladesh"></constructor-arg>
+    </bean>
+
+    <bean class="Experience" id="experience1">
+        <constructor-arg index="0" value="DSi"></constructor-arg>
+        <constructor-arg index="1" value="90K"></constructor-arg>
+    </bean>
+    <bean class="Experience" id="experience2">
+        <constructor-arg index="0" value="WellDev"></constructor-arg>
+        <constructor-arg index="1" value="130K"></constructor-arg>
+    </bean>
+
+    <bean class="Employee" id="employee" init-method="init" destroy-method="destroy">
+        <constructor-arg index="0" value="101"></constructor-arg>
+        <constructor-arg index="1" value="Farman Uddin"></constructor-arg>
+        <constructor-arg>
+            <ref bean="address"></ref>
+        </constructor-arg>
+        <constructor-arg>
+            <list>
+                <ref bean="experience1"></ref>
+                <ref bean="experience2"></ref>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
