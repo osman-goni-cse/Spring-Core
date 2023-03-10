@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="587bd0e4-e616-4981-945d-44d5191d2210" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/src/main/java/com/learnwithosman/dao/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/src/main/java/com/learnwithosman/dao/TestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/src/main/java/com/learnwithosman/entities/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/src/main/java/com/learnwithosman/entities/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Spring_ORM/src/main/resources/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_MVC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_MVC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_MVC/src/main/java/com/learnwithosman/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_MVC/src/main/java/com/learnwithosman/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_MVC/src/main/java/com/learnwithosman/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_MVC/src/main/java/com/learnwithosman/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_MVC/src/main/java/com/learnwithosman/spring_mvc/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_MVC/src/main/java/com/learnwithosman/spring_mvc/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_MVC/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_MVC/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_MVC/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_MVC/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Mm88nS3JBCH2RB6sRbpgt3tgaP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="587bd0e4-e616-4981-945d-44d5191d2210" name="Changes" comment="" />
+      <created>1678361251495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678361251495</updated>
+      <workItem from="1678361252537" duration="241000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
