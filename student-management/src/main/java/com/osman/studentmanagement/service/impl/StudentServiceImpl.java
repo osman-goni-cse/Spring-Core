@@ -21,7 +21,22 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    public Student getStudentById(Long id) {
+        return studentRepository.getReferenceById(id);
+    }
+
+    @Override
     public void saveStudent(Student student) {
         studentRepository.save(student);
+    }
+
+    @Override
+    public Student updateStudent(Student student) {
+        return studentRepository.save(student);
+    }
+
+    @Override
+    public void deleteStudent(Long studentId) {
+        this.studentRepository.deleteById(studentId);
     }
 }
