@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uploaded Images</title>
+</head>
+<body>
+<div>
+  <a class="nav-link" th:href="@{/upload}">Add File</a>
+
+</div>
+<h1>Uploaded Images</h1>
+
+<ul>
+  <th:block th:each="file : ${files}">
+    <li><a th:href="@{'/uploads/' + ${file}}"><span th:text="${file}"/></a></li>
+  </th:block>
+</ul>
+
+<div th:text="${message}"></div>
+
+</body>
+</html>
