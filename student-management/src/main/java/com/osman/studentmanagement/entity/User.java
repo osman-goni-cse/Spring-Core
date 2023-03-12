@@ -25,8 +25,10 @@ public class User {
 
     @Column(name = "last_name", nullable = false, length = 20)
     private String lastName;
+    @Column(name = "verification_code", length = 128)
+    private String verificationCode;
+    private boolean enabled;
 
-    // getters and setters are not shown
     public String getUsername() {
         return this.firstName + " " + this.lastName;
     }

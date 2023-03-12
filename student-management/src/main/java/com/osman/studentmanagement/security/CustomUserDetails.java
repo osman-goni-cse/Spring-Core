@@ -9,7 +9,8 @@ import java.util.Collection;
 public class CustomUserDetails implements UserDetails {
     private User user;
 
-    public CustomUserDetails(com.osman.studentmanagement.entity.User user) {
+    public CustomUserDetails(User user) {
+
         this.user = user;
     }
 
@@ -45,7 +46,8 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+
+        return user.isEnabled();
     }
 //    public String getFullName() {
 //        return user.getFirstName() + " " + user.getLastName();
