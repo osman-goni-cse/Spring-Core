@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::div})">
 <head>
   <title>Uploaded Images</title>
 </head>
 <body>
-<div>
-  <a class="nav-link" th:href="@{/upload}">Add File</a>
+  <div>
+    <p>
+      <a class="nav-link" th:href="@{/upload}">Add File</a>
 
-</div>
-<h1>Uploaded Images</h1>
+    </p>
+    <h1>Uploaded Images</h1>
 
-<ul>
-  <th:block th:each="file : ${files}">
-    <li><a th:href="@{'/uploads/' + ${file}}"><span th:text="${file}"/></a></li>
-  </th:block>
-</ul>
+    <ul>
+      <th:block th:each="file : ${files}">
+        <li><a th:href="@{'/uploads/' + ${file}}"><span th:text="${file}"/></a></li>
+      </th:block>
+    </ul>
 
-<div th:text="${message}"></div>
+    <div th:text="${message}"></div>
+
+  </div>
 
 </body>
 </html>

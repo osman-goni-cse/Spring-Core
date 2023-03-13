@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::div})">
 <head>
     <meta charset="ISO-8859-1">
     <title>Student Management System</title>
@@ -9,31 +9,6 @@
           crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">Student Management System</a>
-
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/students}">Student Management</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/show_uploaded_file}">Uploaded Files</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/register}">Register</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
 <div class ="container">
     <div class = "row">

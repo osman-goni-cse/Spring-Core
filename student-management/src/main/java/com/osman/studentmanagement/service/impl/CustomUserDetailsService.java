@@ -23,7 +23,6 @@ public class CustomUserDetailsService implements UserDetailsService {
     private UserRepository userRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
-
     @Autowired
     private JavaMailSender mailSender;
 
