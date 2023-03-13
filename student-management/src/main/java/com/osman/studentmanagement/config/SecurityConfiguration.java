@@ -28,20 +28,25 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-        http.authorizeRequests()
-                .requestMatchers("/students").authenticated()
-                .anyRequest().permitAll()
-                .and()
+        http.
+                authorizeRequests()
+                    .requestMatchers("/students").authenticated()
+                    .anyRequest().permitAll()
+                    .and()
                 .formLogin()
-                .usernameParameter("email")
-                .defaultSuccessUrl("/students")
-                .permitAll()
-                .and()
-                .logout().logoutSuccessUrl("/").permitAll();
+                    .usernameParameter("email")
+                    .defaultSuccessUrl("/students")
+                    .permitAll()
+                    .loginPage("/login")
+                    .and()
+                .logout()
+                    .logoutUrl("/logout") // the URL for the logout endpoint
+                    .logoutSuccessUrl("/login?logout") // the URL to redirect after logout
+                    .permitAll();
 
 //        http.headers().frameOptions().sameOrigin();
         http.authenticationProvider(authenticationProvider());
-
+//        http.formLogin().loginPage("/login");
 
         return http.build();
     }

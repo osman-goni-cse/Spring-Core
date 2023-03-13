@@ -29,6 +29,9 @@ public class User {
     private String verificationCode;
     private boolean enabled;
 
+    @Column(name = "reset_password_token", length = 128)
+    private String resetPasswordToken;
+
     public String getUsername() {
         return this.firstName + " " + this.lastName;
     }
