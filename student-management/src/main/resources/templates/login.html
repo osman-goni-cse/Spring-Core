@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
 </head>
 <body>
-  <h1>Custom Login Page</h1>
+  <section>
+    <h1>Custom Login Page</h1>
 
-  <form th:action="@{/login}" method="post" th:object="${loginForm}">
-    <div>
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" th:field="*{email}">
+    <form th:action="@{/login}" method="post" th:object="${loginForm}">
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" th:field="*{email}">
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" th:field="*{password}">
+      </div>
+
+      <div>
+        <button type="submit">Login</button>
+        <a th:href="@{/forgot_password}">Forgot Your Password</a>
+      </div>
+    </form>
+
+    <div th:if="${errorMessage}" style="color: red;">
+      <p th:text="${errorMessage}"></p>
     </div>
-
-    <div>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" th:field="*{password}">
-    </div>
-
-    <div>
-      <button type="submit">Login</button>
-    </div>
-  </form>
-
-  <div th:if="${errorMessage}" style="color: red;">
-    <p th:text="${errorMessage}"></p>
-  </div>
+  </section>
 </body>
 </html>
